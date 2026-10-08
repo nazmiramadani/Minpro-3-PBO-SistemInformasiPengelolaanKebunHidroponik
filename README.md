@@ -15,20 +15,7 @@ Melalui menu utama, pengguna dapat melakukan operasi CRUD (Create, Read, Update,
 
 ## Penjelasan Struktur Package
 
-```
-src/
-├── main/
-│   └── Minpro3.java
-├── controller/
-│   └── TanamanController.java
-├── model/
-│   ├── Tanaman.java
-│   ├── TanamanSayur.java
-│   ├── TanamanBuah.java
-│   └── PerawatanTanaman.java
-└── view/
-    └── TanamanView.java
-```
+<img width="359" height="300" alt="image" src="https://github.com/user-attachments/assets/1534fb94-89c7-4774-bcfb-16823da9aa43" />
 
 | Package | File | Penjelasan |
 |---|---|---|
