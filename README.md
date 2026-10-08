@@ -134,11 +134,7 @@ Dengan abstraction, `Tanaman` hanya mendefinisikan "apa" yang harus dimiliki set
    * `tampilkanInfo()` di `Tanaman` di-override oleh `TanamanSayur` dan `TanamanBuah`. Masing-masing memanggil `super.tampilkanInfo()` terlebih dahulu, lalu menambahkan atribut spesifiknya.
    * `getKategori()`, `hitungMasaPanen()`, dan `tampilkanPerawatanKhusus()` diimplementasikan dengan perilaku berbeda di setiap subclass.
 
-2. **Upcasting pada koleksi**
-   * Controller menyimpan semua tanaman dalam satu `ArrayList<Tanaman>`. Pada `TanamanView.tampilkanDetail(Tanaman t)`, method `t.tampilkanInfo()`, `t.hitungMasaPanen()`, dan `t.tampilkanPerawatanKhusus()` dipanggil melalui tipe referensi `Tanaman`, namun yang dijalankan otomatis sesuai objek aslinya (`TanamanSayur` atau `TanamanBuah`), tanpa pengecekan tipe manual untuk menentukan tampilan.
-   * Pada `updateTanaman()`, `getKategori()` digunakan untuk menentukan *downcasting* ke `TanamanSayur` atau `TanamanBuah` agar atribut khusus dapat diubah.
-
-3. **Method overloading (compile-time polymorphism)**
+2. **Method overloading (compile-time polymorphism)**
    * `TanamanController.tambahTanaman()` memiliki 4 versi: tanpa parameter (input interaktif), dengan objek `Tanaman`, dengan parameter sayur, dan dengan parameter buah.
    * `TanamanController.cariTanaman(int id)` dan `cariTanaman(String kataKunci)`.
    * `TanamanView.inputAngka(String)` dan `inputAngka(String, int)`.
